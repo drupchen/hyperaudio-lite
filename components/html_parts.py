@@ -7,7 +7,7 @@ head = dedent("""\
     <html lang="en">
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད། རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་གསུང་།</title>
+        <title>ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད། རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་གསུང་བཞུགས།།</title>
         <link rel="stylesheet" href="css/hyperaudio-lite-player.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
