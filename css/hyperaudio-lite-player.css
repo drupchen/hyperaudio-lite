@@ -102,7 +102,7 @@ body {
   font-size: 12px;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   background-color: #555;
 }
 
