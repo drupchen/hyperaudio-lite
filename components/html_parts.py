@@ -65,7 +65,7 @@ body_beginning = dedent("""\
               Press the "Play" button to start playing the audio. The transcription will follow the audio.
               <br><br>You can also click anywhere on the text (except where there is a background color) to bring the audio to that point.
               <br><br>
-              ཡིག་ནོར་རམ། སྒྲ་ཇི་བཞིན་མ་ཕབས་པ་གཟིགས་ཚེ། <a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">དྲྭ་ཐག་འདིར་བསྣུན་ནས།</a> མཆན་འགོད་པའི་བཀའ་དྲིན་གནང་བར་ཞུ། གང་མགྱོགས་ཀྱིས་ནོར་བཅོས་བྱེད་ངེས་ཡིན།
+              <font face="Jomolhari" size="3">ཡིག་ནོར་རམ། སྒྲ་ཇི་བཞིན་མ་ཕབས་པ་གཟིགས་ཚེ། <a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">དྲྭ་ཐག་འདིར་བསྣུན་ནས།</a> མཆན་འགོད་པའི་བཀའ་དྲིན་གནང་བར་ཞུ། གང་མགྱོགས་ཀྱིས་ནོར་བཅོས་བྱེད་ངེས་ཡིན།</font>
               <br>If you see any mistakes, please add a comment in <a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">this Google Document</a>. I'll correct the transcription as soon as possible.
               <br><br>
               Legend:
