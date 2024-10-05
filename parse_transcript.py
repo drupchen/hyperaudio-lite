@@ -116,11 +116,19 @@ def gen_ha_page(in_file):
 
         ha_trans.append('</p>')
 
-    return ''.join(ha_trans)
+    return ''.join(ha_trans), chunks
 
+def format_text(chunks):
+    out = []
+    for _, chunk in chunks:
+        c = ''.join([c['content'] for c in chunk])
+        out.append(c)
+    return '\n\n'.join(out)
 
 in_file = 'components/Lamrim Dutsi Nyingpo_A_1.srt'
-transcription = gen_ha_page(in_file)
+transcription, chunks = gen_ha_page(in_file)
 html_page = '\n'.join([head, body_beginning, transcript_start, transcription, transcrip_end, body_end])
-
 Path('index.html').write_text(html_page)
+
+text = format_text(chunks)
+Path('lamrim_dutsi_nyingpo.txt').write_text(text)

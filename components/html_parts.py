@@ -65,6 +65,9 @@ body_beginning = dedent("""\
               Press the "Play" button to start playing the audio. The transcription will follow the audio.
               <br><br>You can also click anywhere on the text (except where there is a background color) to bring the audio to that point.
               <br><br>
+              ཡིག་ནོར་གཟིགས་ཚེ། <a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing">དྲྭ་ཐག་འདིར་བསྣུན་ནས།</a> མཆན་འགོད་པའི་བཀའ་དྲིན་གནང་བར་ཞུ། གང་མགྱོགས་ཀྱིས་ནོར་བཅོས་བྱེད་ངེས་ཡིན།
+              <br>If you see any mistakes, please add a comment in <a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing">this Google Document</a>. I'll correct the transcription as soon as possible.
+              <br><br>
               Legend:
               <ul>
                 <li>"<font class="unsure">༺transcription I'm unsure about༻</font>"</li>
@@ -77,6 +80,7 @@ body_beginning = dedent("""\
                 <li><font color="firebrick">root text is in red</font></li>
                 <li><font color="steelblue">sapche is in blue</font></li>
               </ul>
+              
           </div>
           
           <iframe  id="hyperplayer" data-player-type="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1928781707%3Fsecret_token%3Ds-k7KAfbcdtzf&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
