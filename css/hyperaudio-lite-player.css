@@ -37,6 +37,7 @@
 
 .hyperaudio-transcript .active > .active {
   color: #000;
+  background-color: lightblue;
 }
 
 .hyperaudio-transcript .unread {
@@ -70,8 +71,21 @@
 body {
   font-family: Jomolhari, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   line-height: 1.5;
+  font-size: 24pt;
 }
 
 .speaker {
   font-weight: bold;
+}
+
+.unsure {
+  background-color: lightcoral;
+}
+
+.hesit {
+  background-color: lightsteelblue;
+}
+
+.changed {
+  background-color: plum;
 }
