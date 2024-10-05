@@ -58,7 +58,7 @@ def gen_ha_page(in_file):
     for s_num, chunk in chunks:
         # add slide to html
         if s_num:
-            img = f'\n<img src="/components/slides/slide_{s_num}.jpg" alt="slide {s_num}">\n'
+            img = f'\n<img src="components/slides/slide_{s_num}.jpg" alt="slide {s_num}">\n'
             ha_trans.append(img)
         # add text
         ha_trans.append('<p>')
