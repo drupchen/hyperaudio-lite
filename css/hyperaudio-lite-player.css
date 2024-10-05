@@ -21,7 +21,7 @@
   font-size: 200%;
 }
 
-/*.hyperaudio-transcript a {
+*.hyperaudio-transcript a {
   cursor: pointer;
   color: #000;
 }*/
@@ -68,7 +68,7 @@
 }
 
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: Jomolhari, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   line-height: 1.5;
 }
 
