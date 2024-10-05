@@ -57,7 +57,7 @@ head = dedent("""\
 
 body_beginning = dedent("""\
       <body>
-          <p style="font-size: 26pt; text-align: center;">༄༅། །ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད། རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་གསུང་བཞུགས།།</p>
+          <p style="font-size: 32pt; text-align: center;">༄༅། །ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད། རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་གསུང་བཞུགས།།</p>
           <p style="font-size: 10pt;"> Work in progress. Will be regularly updated. Please check the instructions at the bottom.</p>
           <iframe  id="hyperplayer" data-player-type="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1928781707%3Fsecret_token%3Ds-k7KAfbcdtzf&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
     
@@ -80,15 +80,23 @@ transcrip_end = dedent("""\
           </div>""")
 
 body_end = dedent("""\
-            <p style="font-size: 50%;">
+            <div style="font-size: 50%;">
               Press the "Play" button to start playing the audio. The transcription will follow the audio.
               <br><br>You can also click anywhere on the text (except where there is a background color) to bring the audio to that point.
               <br><br>
-              Legend: <br>
-              "<font class="unsure">༺transcription I'm unsure about༻</font>"<br>
-              "<font class="hesit">༼hesitations or repetitions that can be ignored༽</font>"<br>
-              "<font class="changed">changed-syllable࿏་</font>"
-            </p>
+              Legend:
+              <ul>
+                <li>"<font class="unsure">༺transcription I'm unsure about༻</font>"</li>
+                <li>"<font class="hesit">༼hesitations or repetitions that can be ignored༽</font>"</li>
+                <li>"<font class="changed">changed-syllable࿏་</font>"</li>
+              </ul>
+
+              In the images, 
+              <ul>
+                <li><font color="firebrick">root text is in red</font></li>
+                <li><font color="steelblue">sapche is in blue</font></li>
+              </ul>
+            </div>
           <script src="https://w.soundcloud.com/player/api.js"></script>
           <script src="js/hyperaudio-lite.js"></script>
           <script src="js/hyperaudio-lite-extension.js"></script>

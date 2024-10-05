@@ -27,62 +27,95 @@ def parse_srt(in_file):
     return parsed
 
 def gen_ha_page(in_file):
+    # A. parse and prepare chunks
     parsed = parse_srt(in_file)
-
-    ha_trans = ['<p>']
+    chunks = []
+    cur = []
+    slide_num = 0
     for p in parsed:
-        start = p['start']
-        duration = p['end'] - p['start']
-        content = p['content']
-        # further process content here ########################################
-        if content.endswith('།') and not content.endswith(' །'):
-            content += ' '
+        if p['content'].startswith('{'):
+            # add to chunks
+            if cur:
+                num = None
+                if slide_num:
+                    num = slide_num
+                chunks.append((num, cur))
+                cur = []
 
-        # unsure
-        content = content.replace('༺', '<span class="unsure">༺')
-        content = content.replace('༻', '༻</span>')
+            # start new chunk
+            s_num, text = p['content'].split('}')
+            slide_num = int(s_num[1:])
+            p['content'] = text
+            cur.append(p)
+        else:
+            cur.append(p)
+    # trailing chunk
+    if cur:
+        chunks.append((slide_num, cur))
 
-        # hesitation
-        content = content.replace('༼', '<span class="hesit">༼')
-        content = content.replace('༽', '༽</span>')
+    # B. format and add ha html code
+    ha_trans = []
+    for s_num, chunk in chunks:
+        # add slide to html
+        if s_num:
+            img = f'\n<img src="/components/slides/slide_{s_num}.jpg" alt="slide {s_num}">\n'
+            ha_trans.append(img)
+        # add text
+        ha_trans.append('<p>')
+        for p in chunk:
+            start = p['start']
+            duration = p['end'] - p['start']
+            content = p['content']
+            # further process content here ########################################
+            if content.endswith('།') and not content.endswith(' །'):
+                content += ' '
 
-        # changed syllables
-        idxs = [m.start() for m in re.finditer('࿏', content)]
-        if idxs:
-            raw = [content[:idxs[0]]]
-            raw.extend([content[i:j] for i,j in zip(idxs, idxs[1:]+[None])])
-            parts = []
-            for r in raw:
-                if r.startswith('࿏'):
-                    parts.append(r[:2])
-                    if r[2:]:
-                        parts.append(r[2:])
-                else:
-                    parts.append(r)
+            # unsure
+            content = content.replace('༺', '<span class="unsure">༺')
+            content = content.replace('༻', '༻</span>')
 
-            for i in range(len(parts)):
-                if i > 0 and parts[i].startswith('࿏'):
-                    while True:
-                        if not parts[i-1]:
-                            break
-                        c = parts[i-1][-1]
-                        if c == '་':
-                            break
-                        parts[i] = c + parts[i]
-                        parts[i-1] = parts[i-1][:-1]
+            # hesitation
+            content = content.replace('༼', '<span class="hesit">༼')
+            content = content.replace('༽', '༽</span>')
 
-            for i in range(len(parts)):
-                if '࿏' in parts[i]:
-                    parts[i] = f'<span class="changed">{parts[i]}</span>'
-            content = ''.join(parts)
-        # #######################################################################
+            # changed syllables
+            idxs = [m.start() for m in re.finditer('࿏', content)]
+            if idxs:
+                raw = [content[:idxs[0]]]
+                raw.extend([content[i:j] for i,j in zip(idxs, idxs[1:]+[None])])
+                parts = []
+                for r in raw:
+                    if r.startswith('࿏'):
+                        parts.append(r[:2])
+                        if r[2:]:
+                            parts.append(r[2:])
+                    else:
+                        parts.append(r)
 
-        # add units while ignoring empty segments
-        if content.strip():
-            trans = f'<a data-m="{start}" data-d="{duration}">{content}</a>'
-            ha_trans.append(trans)
+                for i in range(len(parts)):
+                    if i > 0 and parts[i].startswith('࿏'):
+                        while True:
+                            if not parts[i-1]:
+                                break
+                            c = parts[i-1][-1]
+                            if c == '་':
+                                break
+                            parts[i] = c + parts[i]
+                            parts[i-1] = parts[i-1][:-1]
 
-    ha_trans.append('</p>')
+                for i in range(len(parts)):
+                    if '࿏' in parts[i]:
+                        parts[i] = f'<span class="changed">{parts[i]}</span>'
+                content = ''.join(parts)
+            # #######################################################################
+
+            # add units while ignoring empty segments
+            if content.strip():
+                trans = f'<a data-m="{start}" data-d="{duration}">{content}</a>'
+                ha_trans.append(trans)
+
+        ha_trans.append('</p>')
+
     return ''.join(ha_trans)
 
 
