@@ -102,10 +102,6 @@ body {
   font-size: 12px;
 }
 
-.collapsible:hover {
-  background-color: #555;
-}
-
 .content {
   padding: 0 18px;
   display: none;
