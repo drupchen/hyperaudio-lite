@@ -96,7 +96,7 @@ body_beginning = dedent("""\
           </dialog>""")
 
 transcript_start = dedent("""\
-          <div id="hypertranscript" class="hyperaudio-transcript" style="overflow-y:scroll; height:600px; position:relative; border-style:dashed; border-width: 1px; border-color:#999; padding: 8px">
+          <div id="hypertranscript" class="hyperaudio-transcript" style="overflow-y:scroll; height:1200px; position:relative; border-style:dashed; border-width: 1px; border-color:#999; padding: 8px">
           <article><section>""")
 
 transcrip_end = dedent("""\
