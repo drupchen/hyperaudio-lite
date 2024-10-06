@@ -14,7 +14,7 @@ head = dedent("""\
         <style>
           /* uncomment the following CSS for active parent / word indicator */ 
           
-          /*
+          
           .hyperaudio-transcript .active{
             background-color: #efefef;
           }
@@ -24,7 +24,7 @@ head = dedent("""\
             text-decoration:  #00f underline;
             text-decoration-thickness: 3px;
           }
-          */
+          
           #popover {
           position: absolute;
           background-color: #f9f9f9;
