@@ -101,7 +101,7 @@ players = [
 ]
 
 transcript_start = """\
-          <div id="hypertranscript###" class="hyperaudio-transcript" style="resize: vertical; overflow-y:scroll; height:800px; position:relative; border-style:dashed; border-width: 1px; border-color:#999; padding: 8px">
+          <div id="hypertranscript###" class="hyperaudio-transcript" style="resize: vertical; overflow-y:scroll; height:800px; scrollbar-gutter: stable; position:relative; border-style:dashed; border-width: 1px; border-color:#999; padding: 8px">
           <article><section>"""
 
 
