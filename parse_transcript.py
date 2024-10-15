@@ -125,10 +125,16 @@ def format_text(chunks):
         out.append(c)
     return '\n\n'.join(out)
 
-in_file = 'components/Lamrim Dutsi Nyingpo_A_1.srt'
-transcription, chunks = gen_ha_page(in_file)
-html_page = '\n'.join([head, body_beginning, transcript_start, transcription, transcrip_end, body_end])
+transcriptions = []
+for i, in_file in enumerate(Path('components/').glob('*.srt')):
+    transcription, chunks = gen_ha_page(in_file)
+    p = players[i] + '\n'
+    p += transcript_start.replace('###', str(i+1))
+    transcriptions.append(f'{p}\n{transcription}\n{transcript_end}\n\n')
+    text = format_text(chunks)
+    (in_file.parent.parent / (in_file.stem + '.txt')).write_text(text)
+
+html_page = '\n'.join([head, body_beginning, '\n'.join(transcriptions), body_end])
 Path('index.html').write_text(html_page)
 
-text = format_text(chunks)
-Path('lamrim_dutsi_nyingpo.txt').write_text(text)
+

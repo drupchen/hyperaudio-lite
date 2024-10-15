@@ -7,7 +7,7 @@ head = dedent("""\
     <html lang="en">
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>ལམ་རིམ་བདུད་རྩི་སྙིང་པོའི་ལྗགས་ཁྲིད།</title>
+        <title>ལྗགས་ཁྲིད་ཐོས་ཀློག་གཉིས་ལྡན།</title>
         <link rel="stylesheet" href="css/hyperaudio-lite-player.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
@@ -57,9 +57,7 @@ head = dedent("""\
 
 body_beginning = dedent("""\
       <body>
-          <p style="font-size: 32pt; text-align: center;">༄༅། །ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད། རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་གསུང་བཞུགས།།</p>
-          
-          
+          <p style="font-size: 32pt; text-align: center;">༄༅། །རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་ལྗགས་ཁྲིད་ཐོས་ཀློག་གཉིས་ལྡན་དུ་བསྒྲིགས་པ་བཞུགས།།</p>
           <button type="button" class="collapsible">Click for instructions. Work in progress, will be regularly updated.</button>
           <div class="content">
               Press the "Play" button to start playing the audio. The transcription will follow the audio.
@@ -83,24 +81,31 @@ body_beginning = dedent("""\
               </ul>
               
           </div>
-          
-          <iframe  id="hyperplayer" data-player-type="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1928781707%3Fsecret_token%3Ds-k7KAfbcdtzf&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
-    
-          <div id="popover"><a id="popover-btn">Copy to clipboard <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="-130 -110 600 600"><path d="m161,152.9h190c0.1,0 0.1,0 0.2,0 10.8,0 19.6-7.1 19.6-16 0-1.5-14.1-82.7-14.1-82.7-1.3-7.9-9.6-13.8-19.4-13.8l-61.7,.1v-13.5c0-8.8-8.8-16-19.6-16-10.8,0-19.6,7.1-19.6,16v13.6l-61.8,.1c-9.8,0-18,5.9-19.4,13.8l-13.7,80.3c-1.2,14.3 13.5,18.1 19.5,18.1z" fill="currentcolor"/><path d="m427.5,78.9h-26.8c0,0 9.3,53.5 9.3,58 0,30.4-26.4,55.2-58.8,55.2h-190.2c-19.6,0.4-63.3-14.7-58.1-63.9l8.4-49.2h-26.8c-10.8,0-19.6,8.8-19.6,19.6v382.9c0,10.8 8.8,19.6 19.6,19.6h343c10.8,0 19.6-8.8 19.6-19.6v-383c0-10.8-8.8-19.6-19.6-19.6zm-76.5,320.1h-190c-10.8,0-19.6-8.8-19.6-19.6 0-10.8 8.8-19.6 19.6-19.6h190c10.8,0 19.6,8.8 19.6,19.6 0,10.8-8.7,19.6-19.6,19.6zm0-110.3h-190c-10.8,0-19.6-8.8-19.6-19.6 0-10.8 8.8-19.6 19.6-19.6h190c10.8,0 19.6,8.8 19.6,19.6 0,10.8-8.7,19.6-19.6,19.6z" fill="currentcolor"/></svg></a></div>
-    
-          <dialog id="clipboard-dialog">
-              <h3>The following text has been copied to the clipboard</h3>
-              <p id=clipboard-text></p>
-              <div style="text-align: right;">
-                <button id="clipboard-confirm">ok</button>
-              </div>
-          </dialog>""")
+          <p style="font-size: 20pt;"><a href="#dutsi-nyingpo-1">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་དང་པོ།</a></p>
+          <p style="font-size: 20pt;"><a href="#mengag-dzo-1">མན་ངག་མཛོད། སྒྲ་དང་པོ།</a></p>
+          """)
 
-transcript_start = dedent("""\
-          <div id="hypertranscript" class="hyperaudio-transcript" style="resize: vertical; overflow-y:scroll; height:600px; position:relative; border-style:dashed; border-width: 1px; border-color:#999; padding: 8px">
-          <article><section>""")
+players = [
+        dedent("""\
+          <p style="font-size: 26pt; text-align: center;">༈ ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད།</p>
+          <p id="dutsi-nyingpo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
+          <audio id="hyperplayer1" style="position:relative; width:100%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388135794-44100-2-4d0b90528e155.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
+        """),
+        dedent("""\
+          <p style="font-size: 26pt; text-align: center;">༈ མན་ངག་མཛོད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི།</p>
+          <p id="mengag-dzo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
+          <audio id="hyperplayer2" style="position:relative; width:100%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388134785-44100-2-e4521ae64343e.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
+        """)
 
-transcrip_end = dedent("""\
+
+]
+
+transcript_start = """\
+          <div id="hypertranscript###" class="hyperaudio-transcript" style="resize: vertical; overflow-y:scroll; height:800px; position:relative; border-style:dashed; border-width: 1px; border-color:#999; padding: 8px">
+          <article><section>"""
+
+
+transcript_end = dedent("""\
           </section></article>
           </div>""")
 
@@ -115,7 +120,8 @@ body_end = dedent("""\
           let doubleClick = false;
           let webMonetization = false;
     
-          new HyperaudioLite("hypertranscript", "hyperplayer", minimizedMode, autoScroll, doubleClick, webMonetization);
+          new HyperaudioLite("hypertranscript1", "hyperplayer1", minimizedMode, autoScroll, doubleClick, webMonetization);
+           new HyperaudioLite("hypertranscript2", "hyperplayer2", minimizedMode, autoScroll, doubleClick, webMonetization);
           </script>
           <script>
             var coll = document.getElementsByClassName("collapsible");
