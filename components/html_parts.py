@@ -64,8 +64,13 @@ body_beginning = dedent("""\
               <br><br>You can also click anywhere on the text (except where there is a background color) to bring the audio to that point.
               <br>You can resize the text area vertically.
               <br><br>
-              <font face="Jomolhari" size="3">ཡིག་ནོར་རམ། སྒྲ་ཇི་བཞིན་མ་ཕབས་པ་གཟིགས་ཚེ། <a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">དྲྭ་ཐག་འདིར་བསྣུན་ནས།</a> མཆན་འགོད་པའི་བཀའ་དྲིན་གནང་བར་ཞུ། གང་མགྱོགས་ཀྱིས་ནོར་བཅོས་བྱེད་ངེས་ཡིན།</font>
-              <br>If you see any mistakes, please add a comment in <a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">this Google Document</a>. I'll correct the transcription as soon as possible.
+              <font face="Jomolhari" size="3">ཡིག་ནོར་རམ། སྒྲ་ཇི་བཞིན་མ་ཕབས་པ་གཟིགས་ཚེ། གཤམ་གྱི་དྲྭ་ཐག་འདིར་བསྣུན་ནས། མཆན་འགོད་པའི་བཀའ་དྲིན་གནང་བར་ཞུ། གང་མགྱོགས་ཀྱིས་ནོར་བཅོས་བྱེད་ངེས་ཡིན།</font>
+              <br><a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">ལམ་རིམ་བདུད་རྩི་སྙིང་པོའི་ལྗགས་ཁྲིད། སྒྲ་དང་པོ།</a>
+              <br><a href="https://docs.google.com/document/d/1hdEhUVutoZhDGROR1wM7GzIl3cg3fCpMiB3t4gPTFyQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">ལམ་རིམ་བདུད་རྩི་སྙིང་པོའི་ལྗགས་ཁྲིད། སྒྲ་གཉིས་པ།</a>
+              
+              <br><a href="https://docs.google.com/document/d/1K63bd_z6we4CjFOABsKIuADlvvA4DFRA54ny2D2U3YI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">མན་ངག་མཛོད་ཀྱི་དོན་ཁྲིད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི། སྒྲ་དང་པོ།</a>
+              
+              <br>If you see any mistakes, please add a comment in the corresponding links. I'll correct the transcription as soon as possible.
               <br><br>
               Legend:
               <ul>
@@ -81,8 +86,10 @@ body_beginning = dedent("""\
               </ul>
               
           </div>
-          <p style="font-size: 20pt;"><a href="#dutsi-nyingpo-1">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་དང་པོ།</a></p>
-          <p style="font-size: 20pt;"><a href="#mengag-dzo-1">མན་ངག་མཛོད། སྒྲ་དང་པོ།</a></p>
+          <p style="font-size: 20pt;">
+                <a href="#dutsi-nyingpo-1">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་དང་པོ།</a><br>
+                <a href="#mengag-dzo-1">མན་ངག་མཛོད། སྒྲ་དང་པོ།</a>
+          </p>
           """)
 
 players = [
@@ -92,7 +99,7 @@ players = [
           <audio id="hyperplayer1" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388135794-44100-2-4d0b90528e155.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p style="font-size: 26pt; text-align: center;">༈ མན་ངག་མཛོད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི་ཐོས་ཀློག་གཉིས་ལྡན་མ།</p>
+          <p style="font-size: 26pt; text-align: center;">༈ མན་ངག་མཛོད་ཀྱི་དོན་ཁྲིད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི་ཐོས་ཀློག་གཉིས་ལྡན་མ།</p>
           <p id="mengag-dzo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
           <audio id="hyperplayer2" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388134785-44100-2-e4521ae64343e.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """)
