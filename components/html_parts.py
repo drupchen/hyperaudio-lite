@@ -57,7 +57,7 @@ head = dedent("""\
 
 body_beginning = dedent("""\
       <body>
-          <p style="font-size: 32pt; text-align: center; color: brown;">༄༅། །རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་ལྗགས་ཁྲིད་ཐོས་ཀློག་གཉིས་ལྡན་དུ་བསྒྲིགས་པ་བཞུགས།།</p>
+          <p style="font-size: 32pt; text-align: center; color: brown;">༄༅། །རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་ལྗགས་ཁྲིད་ཐོས་ཀློག་སྦྲགས་མར་བསྒྲིགས་པ་བཞུགས།།</p>
           <button type="button" class="collapsible">Click for instructions. Work in progress, will be regularly updated.</button>
           <div class="content">
               Press the "Play" button to start playing the audio. The transcription will follow the audio.
@@ -95,7 +95,7 @@ body_beginning = dedent("""\
 
 players = [
         dedent("""\
-          <p style="font-size: 26pt; text-align: center; color: brown;">༈ ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད་ཐོས་ཀློག་གཉིས་ལྡན་མ།</p>
+          <p style="font-size: 26pt; text-align: center; color: brown;">༈ ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད་ཐོས་ཀློག་སྦྲགས་མ།</p>
           <p id="dutsi-nyingpo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
           <audio id="hyperplayer1" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388135794-44100-2-4d0b90528e155.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """),
@@ -104,7 +104,7 @@ players = [
           <audio id="hyperplayer2" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-17/182bd42d-915c-6b81-16d6-c0b0e0f61dd0.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p style="font-size: 26pt; text-align: center; color: brown;">༈ མན་ངག་མཛོད་ཀྱི་དོན་ཁྲིད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི་ཐོས་ཀློག་གཉིས་ལྡན་མ།</p>
+          <p style="font-size: 26pt; text-align: center; color: brown;">༈ མན་ངག་མཛོད་ཀྱི་དོན་ཁྲིད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི་ཐོས་ཀློག་སྦྲགས་མ།</p>
           <p id="mengag-dzo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
           <audio id="hyperplayer3" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388134785-44100-2-e4521ae64343e.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """)
