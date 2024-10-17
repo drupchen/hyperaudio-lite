@@ -125,8 +125,14 @@ def format_text(chunks):
         out.append(c)
     return '\n\n'.join(out)
 
+file_paths = [
+    Path('components/Lamrim Dutsi Nyingpo_A_1.srt'),
+    Path('components/Lamrim Dutsi Nyingpo_A_2.srt'),
+    Path('components/135 A-Menag Dzö_1.srt')
+]
+
 transcriptions = []
-for i, in_file in enumerate(Path('components/').glob('*.srt')):
+for i, in_file in enumerate(file_paths):
     transcription, chunks = gen_ha_page(in_file)
     p = players[i] + '\n'
     p += transcript_start.replace('###', str(i+1))
