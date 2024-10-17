@@ -22,9 +22,20 @@ def parse_srt(in_file):
         start = to_milli(sub.start)
         end = to_milli(sub.end)
         content = sub.content
+        content = normalize_punct(content)
         s = {'start': start, 'end': end, 'content': content}
         parsed.append(s)
     return parsed
+
+
+def normalize_punct(string):
+    string = string.strip().replace('་ ', '་')
+    if string.endswith(' །'):
+        pass
+    elif string.endswith('།') or string.endswith('ཿ'):
+        string += ' '
+    return string
+
 
 def gen_ha_page(in_file):
     # A. parse and prepare chunks
