@@ -42,20 +42,23 @@ def gen_ha_page(in_file):
     parsed = parse_srt(in_file)
     chunks = []
     cur = []
-    slide_num = 0
+    slide_num = []
     for p in parsed:
         if p['content'].startswith('{'):
             # add to chunks
             if cur:
-                num = None
+                num = []
                 if slide_num:
                     num = slide_num
                 chunks.append((num, cur))
                 cur = []
+                slide_num = []
 
             # start new chunk
-            s_num, text = p['content'].split('}')
-            slide_num = int(s_num[1:])
+            text = p['content']
+            while '}' in text:
+                s_num, text = text.split('}', 1)
+                slide_num.append(int(s_num[1:]))
             p['content'] = text
             cur.append(p)
         else:
@@ -69,8 +72,11 @@ def gen_ha_page(in_file):
     for s_num, chunk in chunks:
         # add slide to html
         if s_num:
-            img = f'\n<img src="components/slides/slide_{s_num}.jpg" alt="slide {s_num}">\n'
-            ha_trans.append(img)
+            for n, s in enumerate(s_num):
+                img = f'\n<img src="components/slides/slide_{s}.jpg" alt="slide {s}">\n'
+                if len(s_num) > 1 and n < len(s_num)-1:
+                    img += '<br>'
+                ha_trans.append(img)
         # add text
         ha_trans.append('<p>')
         for p in chunk:
