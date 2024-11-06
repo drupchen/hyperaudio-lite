@@ -75,7 +75,7 @@ body_beginning = dedent("""\
               Legend:
               <ul>
                 <li>"<font class="unsure">༺དོགས་པ་ཡོད་ས།༻</font>" "<font class="unsure">༺&#60;transcription I'm unsure about&#62;༻</font>"</li>
-                <li>"<font class="hesit">༼བཞག་ན་ཆོག་པའི་གསུངས་།༽" "<font class="hesit">༼&#60;hesitations or repetitions that can be ignored&#62;༽</font>"</li>
+                <li>"<font class="hesit">༼བཞག་ན་ཆོག་པའི་གསུངས་།༽</font>" "<font class="hesit">༼&#60;hesitations or repetitions that can be ignored&#62;༽</font>"</li>
                 <li>"<font class="changed">ཚེག་བར་࿏ རྟགས་ཅན་ནི་སྒྲ་ཇི་བཞིན་མེད།</font>" "<font class="changed">&#60;changed-syllable&#62;࿏་</font>"</li>
               </ul>
 
