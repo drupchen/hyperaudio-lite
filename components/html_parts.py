@@ -58,7 +58,7 @@ head = dedent("""\
 body_beginning = dedent("""\
       <body>
           <p style="font-size: 32pt; text-align: center; color: brown;">༄༅། །རྗེ་བླ་མ་དིལ་མཁྱེན་རྡོ་རྗེ་འཆང་གི་ལྗགས་ཁྲིད་ཐོས་ཀློག་སྦྲགས་མར་བསྒྲིགས་པ་བཞུགས།།</p>
-          <button type="button" class="collapsible">Click for instructions. Work in progress, will be regularly updated.</button>
+          <button type="button" class="collapsible"><span style="color:blue;"><font face="Jomolhari" size="4">འགྲེལ་བརྗོད་ཕྱིར་འདིར་སྣུན།</font> Click for instructions.</span> (Work in progress, will be regularly updated.)</button>
           <div class="content">
               Press the "Play" button to start playing the audio. The transcription will follow the audio.
               <br><br>You can also click anywhere on the text (except where there is a background color) to bring the audio to that point.
@@ -67,7 +67,7 @@ body_beginning = dedent("""\
               <font face="Jomolhari" size="3">ཡིག་ནོར་རམ། སྒྲ་ཇི་བཞིན་མ་ཕབས་པ་གཟིགས་ཚེ། གཤམ་གྱི་དྲྭ་ཐག་འདིར་བསྣུན་ནས། མཆན་འགོད་པའི་བཀའ་དྲིན་གནང་བར་ཞུ། གང་མགྱོགས་ཀྱིས་ནོར་བཅོས་བྱེད་ངེས་ཡིན།</font>
               <br><a href="https://docs.google.com/document/d/1NE32WPpIsZMqHPH529EZb7JNW848hwPQKZ74CdUNujI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">ལམ་རིམ་བདུད་རྩི་སྙིང་པོའི་ལྗགས་ཁྲིད། སྒྲ་དང་པོ།</a>
               <br><a href="https://docs.google.com/document/d/1hdEhUVutoZhDGROR1wM7GzIl3cg3fCpMiB3t4gPTFyQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">ལམ་རིམ་བདུད་རྩི་སྙིང་པོའི་ལྗགས་ཁྲིད། སྒྲ་གཉིས་པ།</a>
-              
+              <br><a href="https://docs.google.com/document/d/1AHqgSmalajDM1W6f0N-2JPNVct5otDJLtjvSBekXNho/edit?usp=sharing" target="_blank" rel="noopener noreferrer">ལམ་རིམ་བདུད་རྩི་སྙིང་པོའི་ལྗགས་ཁྲིད། སྒྲ་གསུམ་པ།</a>
               <br><a href="https://docs.google.com/document/d/1K63bd_z6we4CjFOABsKIuADlvvA4DFRA54ny2D2U3YI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">མན་ངག་མཛོད་ཀྱི་དོན་ཁྲིད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི། སྒྲ་དང་པོ།</a>
               
               <br>If you see any mistakes, please add a comment in the corresponding links. I'll correct the transcription as soon as possible.
@@ -89,6 +89,7 @@ body_beginning = dedent("""\
           <p style="font-size: 20pt;">
                 <a href="#dutsi-nyingpo-1">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་དང་པོ།</a><br>
                 <a href="#dutsi-nyingpo-2">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་གཉིས་པ།</a><br>
+                <a href="#dutsi-nyingpo-3">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་གསུམ་པ།</a><br>
                 <a href="#mengag-dzo-1">མན་ངག་མཛོད། སྒྲ་དང་པོ།</a>
           </p>
           """)
@@ -104,9 +105,13 @@ players = [
           <audio id="hyperplayer2" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-17/182bd42d-915c-6b81-16d6-c0b0e0f61dd0.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
+          <p id="dutsi-nyingpo-3" style="font-size: 26pt;">སྒྲ་གསུམ་པ།</p>         
+          <audio id="hyperplayer3" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-10-6/389326076-44100-2-18ee3b8b57965.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
+        """),
+        dedent("""\
           <p style="font-size: 26pt; text-align: center; color: brown;">༈ མན་ངག་མཛོད་ཀྱི་དོན་ཁྲིད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི་ཐོས་ཀློག་སྦྲགས་མ།</p>
           <p id="mengag-dzo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
-          <audio id="hyperplayer3" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388134785-44100-2-e4521ae64343e.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
+          <audio id="hyperplayer4" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388134785-44100-2-e4521ae64343e.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """)
 ]
 
@@ -133,6 +138,7 @@ body_end = dedent("""\
           new HyperaudioLite("hypertranscript1", "hyperplayer1", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript2", "hyperplayer2", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript3", "hyperplayer3", minimizedMode, autoScroll, doubleClick, webMonetization);
+          new HyperaudioLite("hypertranscript4", "hyperplayer3", minimizedMode, autoScroll, doubleClick, webMonetization);
           </script>
           <script>
             var coll = document.getElementsByClassName("collapsible");
