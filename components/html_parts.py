@@ -97,20 +97,20 @@ body_beginning = dedent("""\
 players = [
         dedent("""\
           <p style="font-size: 26pt; text-align: center; color: brown;">༈ ལམ་རིམ་བདུད་རྩི་སྙིང་པོ་དང་། དེའི་འགྲེལ་ཆུང་ཚིག་དོན་རབ་གསལ་གྱི་ལྗགས་ཁྲིད་ཐོས་ཀློག་སྦྲགས་མ།</p>
-          <p id="dutsi-nyingpo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
+          <p id="dutsi-nyingpo-1" style="font-size: 26pt; color: brown;">སྒྲ་དང་པོ།</p>         
           <audio id="hyperplayer1" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388135794-44100-2-4d0b90528e155.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p id="dutsi-nyingpo-2" style="font-size: 26pt;">སྒྲ་གཉིས་པ།</p>         
+          <p id="dutsi-nyingpo-2" style="font-size: 26pt; color: brown;">སྒྲ་གཉིས་པ།</p>         
           <audio id="hyperplayer2" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-17/182bd42d-915c-6b81-16d6-c0b0e0f61dd0.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p id="dutsi-nyingpo-3" style="font-size: 26pt;">སྒྲ་གསུམ་པ།</p>         
+          <p id="dutsi-nyingpo-3" style="font-size: 26pt; color: brown;">སྒྲ་གསུམ་པ།</p>         
           <audio id="hyperplayer3" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-10-6/389326076-44100-2-18ee3b8b57965.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
           <p style="font-size: 26pt; text-align: center; color: brown;">༈ མན་ངག་མཛོད་ཀྱི་དོན་ཁྲིད་རབ་གསལ་ཟླ་བའི་བདུད་རྩི་ཐོས་ཀློག་སྦྲགས་མ།</p>
-          <p id="mengag-dzo-1" style="font-size: 26pt;">སྒྲ་དང་པོ།</p>         
+          <p id="mengag-dzo-1" style="font-size: 26pt; color: brown;">སྒྲ་དང་པོ།</p>         
           <audio id="hyperplayer4" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-15/388134785-44100-2-e4521ae64343e.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """)
 ]
