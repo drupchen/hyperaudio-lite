@@ -34,7 +34,7 @@ class OtrToSrt:
                         turns[0] += raw[i]
                         i += 1
                     else:
-                        turns.append(current)
+                        turns[0] += current
                         in_turn = True
                         i += 1
 
@@ -85,7 +85,8 @@ class OtrToSrt:
         out_file.write_text(srt_string)
 
 
+OtrToSrt(infile=Path('RR Shechen.otr')).export_srt()
 
 
-for f in Path('./').glob('*.otr'):
-    OtrToSrt(infile=f).export_srt()
+#for f in Path('./').glob('*.otr'):
+#    OtrToSrt(infile=f).export_srt()
