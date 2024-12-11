@@ -52,7 +52,6 @@ class OtrToSrt:
             # remove tags
             turn = turn.replace('<p>', '').replace('<span>', '').replace('</span>', '').replace('<span class="timestamp" data-timestamp="', '')
             turns[i] = turn
-            print()
 
         # create pairs of timecode/transcript
         turns[0] = f'00.00000{turns[0].strip()}'
@@ -85,8 +84,8 @@ class OtrToSrt:
         out_file.write_text(srt_string)
 
 
-OtrToSrt(infile=Path('RR Shechen.otr')).export_srt()
+#OtrToSrt(infile=Path('RR Shechen.otr')).export_srt()
 
 
-#for f in Path('./').glob('*.otr'):
-#    OtrToSrt(infile=f).export_srt()
+for f in Path('./').glob('*.otr'):
+    OtrToSrt(infile=f).export_srt()

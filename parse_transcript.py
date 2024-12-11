@@ -146,7 +146,9 @@ file_paths = [
     Path('components/Lamrim Dutsi Nyingpo_A_1.srt'),
     Path('components/Lamrim Dutsi Nyingpo_A_2.srt'),
     Path('components/Lamrim Dutsi Nyingpo_A_3.srt'),
-    Path('components/135 A-Menag Dzö_1.srt')
+    Path('components/135 A-Menag Dzö_1.srt'),
+    Path('components/135 B-Menag Dzö-2.srt'),
+    Path('components/137 A-Menag Dzö-3.srt')
 ]
 
 transcriptions = []
