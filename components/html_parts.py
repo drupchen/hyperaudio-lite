@@ -128,8 +128,11 @@ players = [
         dedent("""\
           <p id="mengag-dzo-4" style="font-size: 26pt; color: brown;">སྒྲ་བཞི་པ།</p>         
           <audio id="hyperplayer7" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-11/f4fa6463-d894-aec3-f06c-353ea2194407.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
-        """)
-
+        """),
+        dedent("""\
+          <p id="mengag-dzo-5" style="font-size: 26pt; color: brown;">སྒྲ་ལྔ་པ།</p>         
+          <audio id="hyperplayer8" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-12/fee8e6ad-9598-f1fd-188d-f16b7df686be.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
+        """),
 ]
 
 transcript_start = """\
@@ -159,6 +162,7 @@ body_end = dedent("""\
           new HyperaudioLite("hypertranscript5", "hyperplayer5", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript6", "hyperplayer6", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript7", "hyperplayer7", minimizedMode, autoScroll, doubleClick, webMonetization);
+          new HyperaudioLite("hypertranscript8", "hyperplayer8", minimizedMode, autoScroll, doubleClick, webMonetization);
           </script>
           <script>
             var coll = document.getElementsByClassName("collapsible");
