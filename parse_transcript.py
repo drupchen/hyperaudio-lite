@@ -151,6 +151,7 @@ file_paths = [
     Path('components/137 A-Menag Dzö-3.srt'),
     Path('components/137 B-Menag Dzö-4.srt'),
     Path('components/138 A-Menag Dzö-5.srt'),
+    Path('components/138 B-Menag Dzö-6.srt'),
 ]
 
 transcriptions = []
