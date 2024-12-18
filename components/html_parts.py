@@ -170,9 +170,10 @@ players = [
           <audio id="hyperplayer15" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-18/cccb767e-f700-21d6-4528-264b9b387ea4.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p id="mengag-dzo-13" style="font-size: 26pt; color: brown;">སྒྲ་བཅུ་གཉིས་པ།</p>         
+          <p id="mengag-dzo-13" style="font-size: 26pt; color: brown;">སྒྲ་བཅུ་གསུམ་པ།</p>         
           <audio id="hyperplayer16" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-18/4174847c-9b8d-7297-8547-4ae41340fe1f.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
+        # https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-18/391766917-44100-2-615252383940a.m4a
 ]
 
 transcript_start = """\
