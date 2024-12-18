@@ -101,6 +101,7 @@ body_beginning = dedent("""\
                 <a href="#mengag-dzo-9">མན་ངག་མཛོད། སྒྲ་དགུ་པ།</a><br>
                 <a href="#mengag-dzo-10">མན་ངག་མཛོད། སྒྲ་བཅུ་པ།</a><br>
                 <a href="#mengag-dzo-11">མན་ངག་མཛོད། སྒྲ་བཅུ་གཅིག་པ།</a><br>
+                <a href="#mengag-dzo-12">མན་ངག་མཛོད། སྒྲ་བཅུ་གཉིས་པ།</a><br>
           </p>
           """)
 
@@ -163,6 +164,11 @@ players = [
           <p id="mengag-dzo-11" style="font-size: 26pt; color: brown;">སྒྲ་བཅུ་གཅིག་པ།</p>         
           <audio id="hyperplayer14" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-17/391722426-44100-2-5d740b2aa1fe.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """),
+        dedent("""\
+          <p id="mengag-dzo-12" style="font-size: 26pt; color: brown;">སྒྲ་བཅུ་གཉིས་པ།</p>         
+          <audio id="hyperplayer15" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-18/cccb767e-f700-21d6-4528-264b9b387ea4.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
+        """),
+        # https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-18/4174847c-9b8d-7297-8547-4ae41340fe1f.mp3
 ]
 
 transcript_start = """\
@@ -199,6 +205,7 @@ body_end = dedent("""\
           new HyperaudioLite("hypertranscript12", "hyperplayer12", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript13", "hyperplayer13", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript14", "hyperplayer14", minimizedMode, autoScroll, doubleClick, webMonetization);
+          new HyperaudioLite("hypertranscript15", "hyperplayer15", minimizedMode, autoScroll, doubleClick, webMonetization);
           </script>
           <script>
             var coll = document.getElementsByClassName("collapsible");
