@@ -110,6 +110,7 @@ body_beginning = dedent("""\
                 <a href="#mengag-dzo-18">མན་ངག་མཛོད། སྒྲ་བཅོ་བརྒྱད་པ།</a><br>
                 <a href="#yeshe-drupa-1">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་དང་པོ།</a><br>
                 <a href="#yeshe-drupa-2">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གཉིས་པ།</a><br>
+                <a href="#yeshe-drupa-3">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གསུམ་པ།</a><br>
           </p>
           """)
 
@@ -209,10 +210,10 @@ players = [
           <p id="yeshe-drupa-2" style="font-size: 26pt; color: brown;">སྒྲ་གཉིས་པ།</p>         
           <audio id="hyperplayer23" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-26/ac2e8a13-6fc1-4d13-9efa-2bdc9aa50663.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
-        # Dorje Tholu Yeshe Drupa
-        # https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-26/b9bd87c3-9e9f-2665-6153-569c0b63baf1.mp3
-        # https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-26/ac2e8a13-6fc1-4d13-9efa-2bdc9aa50663.mp3
-        # https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-26/775b61af-7ca0-6fc4-4a34-cd0af931d4f2.mp3
+        dedent("""\
+          <p id="yeshe-drupa-3" style="font-size: 26pt; color: brown;">སྒྲ་གསུམ་པ།</p>         
+          <audio id="hyperplayer24" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-26/775b61af-7ca0-6fc4-4a34-cd0af931d4f2.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
+        """),
 
 ]
 
@@ -259,6 +260,7 @@ body_end = dedent("""\
           new HyperaudioLite("hypertranscript21", "hyperplayer21", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript22", "hyperplayer22", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript23", "hyperplayer23", minimizedMode, autoScroll, doubleClick, webMonetization);
+          new HyperaudioLite("hypertranscript24", "hyperplayer24", minimizedMode, autoScroll, doubleClick, webMonetization);
           </script>
           <script>
             var coll = document.getElementsByClassName("collapsible");
