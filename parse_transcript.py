@@ -170,6 +170,7 @@ file_paths = [
     Path('components/155 A-Tsiksum Nedek.srt'),
     Path('components/155 B-Tsiksum Nedek.srt'),
     Path('components/001-A gol-shor-tsar-Chos.srt'),
+    Path('components/Terdzod Kalop.srt'),
 ]
 
 transcriptions = []
