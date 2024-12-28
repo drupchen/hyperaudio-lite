@@ -168,6 +168,7 @@ file_paths = [
     Path('components/112 B-Dzogchen Lamrin Yeshey Drupa.srt'),
     Path('components/113 A-Dzogchen Lamrin Yeshey Drupa.srt'),
     Path('components/155 A-Tsiksum Nedek.srt'),
+    Path('components/155 B-Tsiksum Nedek.srt'),
 ]
 
 transcriptions = []

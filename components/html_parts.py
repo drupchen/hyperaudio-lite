@@ -112,6 +112,7 @@ body_beginning = dedent("""\
                 <a href="#yeshe-drupa-2">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གཉིས་པ།</a><br>
                 <a href="#yeshe-drupa-3">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གསུམ་པ།</a><br>
                 <a href="#tsiksum-nedek-1">ཚིག་གསུམ་གནད་རྡེག །སྒྲ་དང་པོ།</a><br>
+                <a href="#tsiksum-nedek-2">ཚིག་གསུམ་གནད་རྡེག །སྒྲ་གཉིས་པ།</a><br>
           </p>
           """)
 
@@ -221,8 +222,11 @@ players = [
           <p style="font-size: 20pt; color: brown;">༺ ༻ གཉིས་ཀྱི་བར་ལ་ཡོད་པའི་ཡི་གེ་ནི་གསུང་ལ་དངོས་སུ་མེད་པར་ཟུར་སྣོན་གྱི་ཡི་གེ་ཡིན།<br>༼ ༽ གཉིས་ཀྱི་བར་ལ་ཡོད་པ་ནི། སྲུབ་དགོས་རྒྱུའི་ཡི་གེ་ཡིན།<br>࿏ རྟགས་མཐའ་ཅན་གྱི་ཚེག་བར་རྣམས་ནི། ཡང་ན་ནོར་བཅོས། ཡང་ན་སྔོན་ཡི་གེར་མ་ཕབས་པའི་གསུང་ཡིན།</p>       
           <audio id="hyperplayer25" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/c50a99be-4e63-4639-05d2-4fc04db0d048.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
-        # https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/c50a99be-4e63-4639-05d2-4fc04db0d048.mp3
-        # https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/2863b05e-6294-a58d-0e77-9af99548754c.mp3
+        dedent("""\
+          <p id="tsiksum-nedek-2" style="font-size: 26pt; color: brown;">སྒྲ་གཉིས་པ།</p>  
+          <p style="font-size: 20pt; color: brown;">༺ ༻ གཉིས་ཀྱི་བར་ལ་ཡོད་པའི་ཡི་གེ་ནི་གསུང་ལ་དངོས་སུ་མེད་པར་ཟུར་སྣོན་གྱི་ཡི་གེ་ཡིན།<br>༼ ༽ གཉིས་ཀྱི་བར་ལ་ཡོད་པ་ནི། སྲུབ་དགོས་རྒྱུའི་ཡི་གེ་ཡིན།<br>࿏ རྟགས་མཐའ་ཅན་གྱི་ཚེག་བར་རྣམས་ནི། ཡང་ན་ནོར་བཅོས། ཡང་ན་སྔོན་ཡི་གེར་མ་ཕབས་པའི་གསུང་ཡིན།</p>       
+          <audio id="hyperplayer26" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/2863b05e-6294-a58d-0e77-9af99548754c.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
+        """),
 ]
 
 transcript_start = """\
@@ -270,6 +274,7 @@ body_end = dedent("""\
           new HyperaudioLite("hypertranscript23", "hyperplayer23", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript24", "hyperplayer24", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript25", "hyperplayer25", minimizedMode, autoScroll, doubleClick, webMonetization);
+          new HyperaudioLite("hypertranscript26", "hyperplayer26", minimizedMode, autoScroll, doubleClick, webMonetization);
           </script>
           <script>
             var coll = document.getElementsByClassName("collapsible");
