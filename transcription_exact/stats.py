@@ -9,6 +9,7 @@ def gen_stats(in_file, threshold=10):
         reader = csv.reader(csvfile, delimiter=',')
         distr = dict()
 
+        line_num = 1
         for start, end, l, trans in reader:
             seconds = str(int(l) / 1000)
             s = seconds.split('.')[0]
@@ -18,7 +19,8 @@ def gen_stats(in_file, threshold=10):
                 distr[s] = {'count': 0, 'list': []}
 
             distr[s]['count'] += 1
-            distr[s]['list'].append((start, trans))
+            distr[s]['list'].append((start, trans, line_num))
+            line_num += 1
 
         # B. format
         distr = sorted([(k, v) for k, v in distr.items()])
@@ -31,9 +33,9 @@ def gen_stats(in_file, threshold=10):
             # add long strings to output
             if int(secs) >= threshold:
                 output.append(cat)
-                for start, string in entry['list']:
+                for start, string, l_num in entry['list']:
                     if string.strip():
-                        output.append(f'\t{str(datetime.timedelta(milliseconds=int(start)))[:-3]} — "{string}"')
+                        output.append(f'\t{l_num} — {str(datetime.timedelta(milliseconds=int(start)))[:-3]} — "{string}"')
 
         output = '\n'.join(summary + output)
 
