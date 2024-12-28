@@ -1,0 +1,31 @@
+total amount of data: 19:10:12.816
+
+001-A gol-shor-tsar-Chos: 0:32:54.106
+112 A-Dzogchen Lamrin Yeshey Drupa: 0:43:15.523
+112 B-Dzogchen Lamrin Yeshey Drupa: 0:36:43.382
+113 A-Dzogchen Lamrin Yeshey Drupa: 0:45:03.199
+135 A-Menag Dzö_1: 0:43:09.300
+135 B-Menag Dzö-2: 0:39:27.739
+137 A-Menag Dzö-3: 0:46:42.452
+137 B-Menag Dzö-4: 0:46:28.278
+138 A-Menag Dzö-5: 0:44:19.464
+138 B-Menag Dzö-6: 0:44:54.712
+139 A-Menag Dzo-7: 0:45:22.030
+139 B-Menag Dzo-8: 0:44:22.409
+140 A-Menag Dzö_9: 0:45:43.903
+140 B-Menag Dzo_10: 0:45:22.460
+141 A-Menag Dzo-11: 0:26:06.939
+141 B-Menag Dzo-12: 0:44:33.494
+142 A-Menag Dzo-13: 0:30:50.435
+142 B-Menag Dzo-14: 0:30:11.065
+143 A-Menag Dzo-15: 0:31:17.896
+143 B-Menag Dzo-16: 0:31:37.737
+144 A-Menag Dzo-17: 0:42:14.803
+144 B-Menag Dzo-18: 0:08:56.066
+155 A-Tsiksum Nedek: 0:45:17.545
+155 B-Tsiksum Nedek: 0:23:59.011
+Lamrim Dutsi Nyingpo_A_1_exact: 1:19:19.819
+Lamrim Dutsi Nyingpo_A_2_exact: 1:11:10.492
+Lamrim Dutsi Nyingpo_A_3_exact: 1:01:58.552
+Shamatha_and_Vipashyana: 0:05:55.170
+Terdzod Kalop: 0:12:54.835
