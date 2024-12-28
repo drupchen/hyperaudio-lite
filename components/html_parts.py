@@ -89,7 +89,13 @@ body_beginning = dedent("""\
           <p style="font-size: 20pt;">
                 <a href="#dutsi-nyingpo-1">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་དང་པོ།</a><br>
                 <a href="#dutsi-nyingpo-2">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་གཉིས་པ།</a><br>
-                <a href="#dutsi-nyingpo-3">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་གསུམ་པ།</a><br>
+                <a href="#dutsi-nyingpo-3">ལམ་རིམ་བདུད་རྩི་སྙིང་པོ། སྒྲ་གསུམ་པའོ།</a><br>
+                <a href="#yeshe-drupa-1">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་དང་པོ།</a><br>
+                <a href="#yeshe-drupa-2">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གཉིས་པ།</a><br>
+                <a href="#yeshe-drupa-3">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གསུམ་པའོ།</a><br>
+                <a href="#tsiksum-nedek-1">ཚིག་གསུམ་གནད་རྡེག །སྒྲ་དང་པོ།</a><br>
+                <a href="#tsiksum-nedek-2">ཚིག་གསུམ་གནད་རྡེག །སྒྲ་གཉིས་པའོ།</a><br>
+                <a href="#golshor-tsarcho">གོལ་ཤོར་ཚར་གཅོད་སེང་གེའི་ང་རོ། སྒྲ་གཅིག་པུའོ།</a><br>
                 <a href="#mengag-dzo-1">མན་ངག་མཛོད། སྒྲ་དང་པོ།</a><br>
                 <a href="#mengag-dzo-2">མན་ངག་མཛོད། སྒྲ་གཉིས་པ།</a><br>
                 <a href="#mengag-dzo-3">མན་ངག་མཛོད། སྒྲ་གསུམ་པ།</a><br>
@@ -107,12 +113,7 @@ body_beginning = dedent("""\
                 <a href="#mengag-dzo-15">མན་ངག་མཛོད། སྒྲ་བཅོ་ལྔ་པ།</a><br>
                 <a href="#mengag-dzo-16">མན་ངག་མཛོད། སྒྲ་བཅུ་དྲུག་པ།</a><br>
                 <a href="#mengag-dzo-17">མན་ངག་མཛོད། སྒྲ་བཅུ་བདུན་པ།</a><br>
-                <a href="#mengag-dzo-18">མན་ངག་མཛོད། སྒྲ་བཅོ་བརྒྱད་པ།</a><br>
-                <a href="#yeshe-drupa-1">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་དང་པོ།</a><br>
-                <a href="#yeshe-drupa-2">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གཉིས་པ།</a><br>
-                <a href="#yeshe-drupa-3">རྡོ་རྗེ་ཐོལ་གླུ་ཡེ་ཤེས་གྲུབ་པ། སྒྲ་གསུམ་པ།</a><br>
-                <a href="#tsiksum-nedek-1">ཚིག་གསུམ་གནད་རྡེག །སྒྲ་དང་པོ།</a><br>
-                <a href="#tsiksum-nedek-2">ཚིག་གསུམ་གནད་རྡེག །སྒྲ་གཉིས་པ།</a><br>
+                <a href="#mengag-dzo-18">མན་ངག་མཛོད། སྒྲ་བཅོ་བརྒྱད་པའོ།</a><br>
           </p>
           """)
 
@@ -127,7 +128,7 @@ players = [
           <audio id="hyperplayer2" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-9-17/182bd42d-915c-6b81-16d6-c0b0e0f61dd0.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p id="dutsi-nyingpo-3" style="font-size: 26pt; color: brown;">སྒྲ་གསུམ་པ།</p>         
+          <p id="dutsi-nyingpo-3" style="font-size: 26pt; color: brown;">སྒྲ་གསུམ་པའོ།</p>         
           <audio id="hyperplayer3" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-10-6/389326076-44100-2-18ee3b8b57965.m4a" type="audio/m4a" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
@@ -200,7 +201,7 @@ players = [
           <audio id="hyperplayer20" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-19/3cd7d4d4-47cb-4852-380e-a5906465500f.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p id="mengag-dzo-18" style="font-size: 26pt; color: brown;">སྒྲ་བཅོ་བརྒྱད་པ།</p>         
+          <p id="mengag-dzo-18" style="font-size: 26pt; color: brown;">སྒྲ་བཅོ་བརྒྱད་པའོ།</p>         
           <audio id="hyperplayer21" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-19/764eb10a-8485-ce68-ea96-eab87fbdcd05.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
@@ -213,7 +214,7 @@ players = [
           <audio id="hyperplayer23" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-26/ac2e8a13-6fc1-4d13-9efa-2bdc9aa50663.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p id="yeshe-drupa-3" style="font-size: 26pt; color: brown;">སྒྲ་གསུམ་པ།</p>         
+          <p id="yeshe-drupa-3" style="font-size: 26pt; color: brown;">སྒྲ་གསུམ་པའོ།</p>         
           <audio id="hyperplayer24" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-26/775b61af-7ca0-6fc4-4a34-cd0af931d4f2.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
@@ -223,9 +224,14 @@ players = [
           <audio id="hyperplayer25" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/c50a99be-4e63-4639-05d2-4fc04db0d048.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
-          <p id="tsiksum-nedek-2" style="font-size: 26pt; color: brown;">སྒྲ་གཉིས་པ།</p>  
+          <p id="tsiksum-nedek-2" style="font-size: 26pt; color: brown;">སྒྲ་གཉིས་པའོ།</p>  
           <p style="font-size: 20pt; color: brown;">༺ ༻ གཉིས་ཀྱི་བར་ལ་ཡོད་པའི་ཡི་གེ་ནི་གསུང་ལ་དངོས་སུ་མེད་པར་ཟུར་སྣོན་གྱི་ཡི་གེ་ཡིན།<br>༼ ༽ གཉིས་ཀྱི་བར་ལ་ཡོད་པ་ནི། སྲུབ་དགོས་རྒྱུའི་ཡི་གེ་ཡིན།<br>࿏ རྟགས་མཐའ་ཅན་གྱི་ཚེག་བར་རྣམས་ནི། ཡང་ན་ནོར་བཅོས། ཡང་ན་སྔོན་ཡི་གེར་མ་ཕབས་པའི་གསུང་ཡིན།</p>       
           <audio id="hyperplayer26" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/2863b05e-6294-a58d-0e77-9af99548754c.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
+        """),
+        dedent("""\
+          <p style="font-size: 26pt; text-align: center; color: brown;">༈ གོལ་ཤོར་ཚར་གཅོད་སེངྒེའི་ང་རོ་ཐོས་ཀློག་སྦྲགས་མ།</p>
+          <p id="golshor-tsarcho" style="font-size: 26pt; color: brown;">སྒྲ་གཅིག་པུའོ།</p>  
+          <audio id="hyperplayer27" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-28/cfd0e249-5ac0-1ccb-508e-f7f8fb92c83a.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
 ]
 
@@ -275,6 +281,7 @@ body_end = dedent("""\
           new HyperaudioLite("hypertranscript24", "hyperplayer24", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript25", "hyperplayer25", minimizedMode, autoScroll, doubleClick, webMonetization);
           new HyperaudioLite("hypertranscript26", "hyperplayer26", minimizedMode, autoScroll, doubleClick, webMonetization);
+          new HyperaudioLite("hypertranscript27", "hyperplayer27", minimizedMode, autoScroll, doubleClick, webMonetization);
           </script>
           <script>
             var coll = document.getElementsByClassName("collapsible");
