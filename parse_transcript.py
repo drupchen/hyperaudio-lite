@@ -92,8 +92,8 @@ def gen_ha_page(in_file):
             content = content.replace('༻', '</span>')
 
             # hesitation
-            content = content.replace('༼', '<span class="hesit">')
-            content = content.replace('༽', '</span>')
+            content = content.replace('༼', '<span class="hesit">(')
+            content = content.replace('༽', ')</span>')
 
             # changed syllables
             idxs = [m.start() for m in re.finditer('࿏', content)]
