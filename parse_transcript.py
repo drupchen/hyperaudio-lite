@@ -32,7 +32,7 @@ def normalize_punct(string):
     string = string.strip().replace('་ ', '་')
     if string.endswith(' །'):
         pass
-    elif string.endswith('།') or string.endswith('ཿ'):
+    elif string.endswith('།') or string.endswith('ཿ') or string.endswith('༔'):
         string += ' '
     return string
 
@@ -84,7 +84,7 @@ def gen_ha_page(in_file):
             duration = p['end'] - p['start']
             content = p['content']
             # further process content here ########################################
-            if content.endswith('།') and not content.endswith(' །'):
+            if (content.endswith('།') and not content.endswith(' །')) or content.endswith('༔'):
                 content += ' '
 
             # unsure
