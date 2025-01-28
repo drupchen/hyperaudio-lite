@@ -79,15 +79,15 @@ body {
 }
 
 .unsure {
-  background-color: lightcoral;
+  background-color: plum;
 }
 
 .hesit {
-  color: lightgray;
+  color: lightcoral;
 }
 
 .changed {
-  background-color: plum;
+  background-color: lightGreen;
 }
 
 .collapsible {

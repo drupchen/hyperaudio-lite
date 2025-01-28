@@ -74,9 +74,9 @@ body_beginning = dedent("""\
               <br><br>
               Legend:
               <ul>
-                <li>"<font class="unsure">༺དོགས་པ་ཡོད་ས།༻</font>" "<font class="unsure">༺&#60;transcription I'm unsure about&#62;༻</font>"</li>
-                <li>"<font class="hesit">༼བཞག་ན་ཆོག་པའི་གསུངས་།༽</font>" "<font class="hesit">༼&#60;hesitations or repetitions that can be ignored&#62;༽</font>"</li>
-                <li>"<font class="changed">ཚེག་བར་࿏ རྟགས་ཅན་ནི་སྒྲ་ཇི་བཞིན་མེད།</font>" "<font class="changed">&#60;changed-syllable&#62;࿏་</font>"</li>
+                <li>"<font class="unsure">དོགས་པ་ཡོད་ས།</font>" "<font class="unsure">&#60;transcription I'm unsure about&#62;</font>"</li>
+                <li>"<font class="hesit">བཞག་ན་ཆོག་པའི་གསུངས་།</font>" "<font class="hesit">&#60;hesitations or repetitions that can be ignored&#62;</font>"</li>
+                <li>"<font class="changed">རྒྱབ་སྦྱོང་ཚོན་དོག་འདི་ཡོད་པའི་ཚེག་བར་དག་ནི་སྒྲ་ཇི་བཞིན་མེད།</font>" "<font class="changed">&#60;changed-syllable&#62;</font>"</li>
               </ul>
 
               In the images, 
@@ -222,12 +222,12 @@ players = [
         dedent("""\
           <p style="font-size: 26pt; text-align: center; color: brown;">༈ ཚིག་གསུམ་གནད་རྡེག་ཐོས་ཀློག་སྦྲགས་མ།</p>
           <p id="tsiksum-nedek-1" style="font-size: 26pt; color: brown;">སྒྲ་དང་པོ།</p>  
-          <p style="font-size: 20pt; color: brown;">༺ ༻ གཉིས་ཀྱི་བར་ལ་ཡོད་པའི་ཡི་གེ་ནི་གསུང་ལ་དངོས་སུ་མེད་པར་ཟུར་སྣོན་གྱི་ཡི་གེ་ཡིན།<br>༼ ༽ གཉིས་ཀྱི་བར་ལ་ཡོད་པ་ནི། སྲུབ་དགོས་རྒྱུའི་ཡི་གེ་ཡིན།<br>࿏ རྟགས་མཐའ་ཅན་གྱི་ཚེག་བར་རྣམས་ནི། ཡང་ན་ནོར་བཅོས། ཡང་ན་སྔོན་ཡི་གེར་མ་ཕབས་པའི་གསུང་ཡིན།</p>       
+          <p style="font-size: 20pt; color: brown;"><font class="unsure" style="color: black">རྒྱབ་སྦྱོང་གི་ཚོན་དོག་འདི་འདྲ་ཡོད་པའི་ཡི་གེ་ནི།</font> གསུང་ལ་དངོས་སུ་མེད་པར་ཟུར་སྣོན་གྱི་ཡི་གེ་ཡིན།<br><font class="hesit">ཚོན་དོག་འདི་འདྲ་ཡོད་པའི་ཡི་གེ་ནི།</font> བསུབ་དགོས་རྒྱུའི་ཡི་གེ་ཡིན།<br><font class="changed" style="color: black">རྒྱབ་སྦྱོང་ལྗང་ཁུ་ཡོད་པའི་ཡི་གེ་ནི།</font> བསུབ་དགོས་པའི་ཡི་གེའི་རྗེས་ལ་ཡིན་ན་ནོར་བཅོས། གཞན་ཡི་གེར་མ་ཕབས་པའི་གསུང་ཡིན།</p>       
           <audio id="hyperplayer25" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/c50a99be-4e63-4639-05d2-4fc04db0d048.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\
           <p id="tsiksum-nedek-2" style="font-size: 26pt; color: brown;">སྒྲ་གཉིས་པའོ།</p>  
-          <p style="font-size: 20pt; color: brown;">༺ ༻ གཉིས་ཀྱི་བར་ལ་ཡོད་པའི་ཡི་གེ་ནི་གསུང་ལ་དངོས་སུ་མེད་པར་ཟུར་སྣོན་གྱི་ཡི་གེ་ཡིན།<br>༼ ༽ གཉིས་ཀྱི་བར་ལ་ཡོད་པ་ནི། སྲུབ་དགོས་རྒྱུའི་ཡི་གེ་ཡིན།<br>࿏ རྟགས་མཐའ་ཅན་གྱི་ཚེག་བར་རྣམས་ནི། ཡང་ན་ནོར་བཅོས། ཡང་ན་སྔོན་ཡི་གེར་མ་ཕབས་པའི་གསུང་ཡིན།</p>       
+          <p style="font-size: 20pt; color: brown;"><font class="unsure" style="color: black">རྒྱབ་སྦྱོང་གི་ཚོན་དོག་འདི་འདྲ་ཡོད་པའི་ཡི་གེ་ནི།</font> གསུང་ལ་དངོས་སུ་མེད་པར་ཟུར་སྣོན་གྱི་ཡི་གེ་ཡིན།<br><font class="hesit">ཚོན་དོག་འདི་འདྲ་ཡོད་པའི་ཡི་གེ་ནི།</font> བསུབ་དགོས་རྒྱུའི་ཡི་གེ་ཡིན།<br><font class="changed" style="color: black">རྒྱབ་སྦྱོང་ལྗང་ཁུ་ཡོད་པའི་ཡི་གེ་ནི།</font> བསུབ་དགོས་པའི་ཡི་གེའི་རྗེས་ལ་ཡིན་ན་ནོར་བཅོས། གཞན་ཡི་གེར་མ་ཕབས་པའི་གསུང་ཡིན།</p>       
           <audio id="hyperplayer26" style="position:relative; width:97%" src="https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-11-27/2863b05e-6294-a58d-0e77-9af99548754c.mp3" type="audio/mp3" controlsList="nodownload" controls></audio>
         """),
         dedent("""\

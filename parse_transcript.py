@@ -88,12 +88,12 @@ def gen_ha_page(in_file):
                 content += ' '
 
             # unsure
-            content = content.replace('༺', '<span class="unsure">༺')
-            content = content.replace('༻', '༻</span>')
+            content = content.replace('༺', '<span class="unsure">')
+            content = content.replace('༻', '</span>')
 
             # hesitation
-            content = content.replace('༼', '<span class="hesit">༼')
-            content = content.replace('༽', '༽</span>')
+            content = content.replace('༼', '<span class="hesit">')
+            content = content.replace('༽', '</span>')
 
             # changed syllables
             idxs = [m.start() for m in re.finditer('࿏', content)]
@@ -122,7 +122,14 @@ def gen_ha_page(in_file):
 
                 for i in range(len(parts)):
                     if '࿏' in parts[i]:
-                        parts[i] = f'<span class="changed">{parts[i]}</span>'
+                        if '/span>' in parts[i]:
+                            a, b = parts[i].split('/span>')
+                            a += '/span>'
+                            b = f'<span class="changed">{b}</span>'
+                            new = a+b
+                            parts[i] = new.replace('࿏', '')
+                        else:
+                            parts[i] = f'<span class="changed">{parts[i].replace('࿏', '')}</span>'
                 content = ''.join(parts)
             # #######################################################################
 
