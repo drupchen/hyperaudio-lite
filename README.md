@@ -10,6 +10,7 @@ You can use Hyperaudio Lite to provide Interactive Transcripts, this readme deta
 - no framework dependencies
 - MIT Licensed
 
+
 ## :tiger: Hyperaudio Lite in the Wild :tiger:
 
 As demonstrated here [https://hyperaudio.github.io/hyperaudio-lite/](https://hyperaudio.github.io/hyperaudio-lite/) plus equivalent [multiplayer version](https://hyperaudio.github.io/hyperaudio-lite/multiplayer.html)
