@@ -353,12 +353,12 @@ class HyperaudioLite {
         const popoverBtn = document.getElementById('popover-btn');
         popoverBtn.addEventListener('click', (e) => {
           popover.style.display = 'none';
-          let cbText = `${document.location}`;
+          let cbText = `${selectionText} ${document.location}`;
           navigator.clipboard.writeText(cbText);
   
           const dialog = document.getElementById("clipboard-dialog");
-          //document.getElementById("clipboard-text").innerHTML = cbText;
-          //dialog.showModal();
+          document.getElementById("clipboard-text").innerHTML = cbText;
+          dialog.showModal();
   
           const confirmButton = document.getElementById("clipboard-confirm");
           confirmButton.addEventListener("click", () => dialog.close());
